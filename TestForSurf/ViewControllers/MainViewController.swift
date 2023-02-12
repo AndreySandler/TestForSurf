@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet var mainView: UIView!
     @IBOutlet var sendApplicationButton: UIButton!
+    @IBOutlet var selectButtonsStackView: UIStackView!
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -24,6 +25,16 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - IBActions
+    @IBAction func selectButtonPressedDidTapped(_ sender: UIButton) {
+        if sender.backgroundColor == .systemGroupedBackground {
+            sender.backgroundColor = .darkGray
+            sender.tintColor = .white
+        } else {
+            sender.backgroundColor = .systemGroupedBackground
+            sender.tintColor = .darkGray
+        }
+    }
+    
     @IBAction func sendApplicationButtonDidTapped(_ sender: UIButton) {
         showALert(
             title: "Поздравляем!",

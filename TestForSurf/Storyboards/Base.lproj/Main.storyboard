@@ -64,7 +64,7 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLz-m5-btP">
                                                                 <rect key="frame" x="0.0" y="0.0" width="61.333333333333336" height="63.666666666666664"/>
-                                                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="iOS">
@@ -75,10 +75,13 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="selectButtonPressedDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjz-S5-aRO"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNK-Wn-BQS">
                                                                 <rect key="frame" x="75.333333333333314" y="0.0" width="110" height="63.666666666666664"/>
-                                                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Android"/>
@@ -87,10 +90,13 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="selectButtonPressedDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xcj-H0-XpY"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53h-LA-Soj">
                                                                 <rect key="frame" x="199.33333333333334" y="0.0" width="96.333333333333343" height="63.666666666666664"/>
-                                                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Flutter"/>
@@ -99,10 +105,13 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="selectButtonPressedDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DX6-LA-J4V"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYS-tS-pTB">
                                                                 <rect key="frame" x="309.66666666666669" y="0.0" width="100.66666666666669" height="63.666666666666664"/>
-                                                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Design"/>
@@ -111,10 +120,13 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="selectButtonPressedDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJ8-3X-lQc"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHZ-O0-nJM">
                                                                 <rect key="frame" x="424.33333333333331" y="0.0" width="62" height="63.666666666666664"/>
-                                                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="QA"/>
@@ -123,10 +135,13 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="selectButtonPressedDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNf-Ob-b49"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAy-u6-Kko">
                                                                 <rect key="frame" x="500.33333333333343" y="0.0" width="85.666666666666686" height="63.666666666666664"/>
-                                                                <color key="backgroundColor" red="0.9529411793" green="0.9529411793" blue="0.96078431610000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="PM"/>
@@ -135,6 +150,9 @@
                                                                         <integer key="value" value="10"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="selectButtonPressedDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ih-Xq-iMN"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -203,6 +221,7 @@
                     <size key="freeformSize" width="606" height="812"/>
                     <connections>
                         <outlet property="mainView" destination="chW-By-YUf" id="CAl-KP-rfg"/>
+                        <outlet property="selectButtonsStackView" destination="7vJ-Ma-MZa" id="QqI-nm-3jh"/>
                         <outlet property="sendApplicationButton" destination="QpS-E1-MVC" id="Uf4-0u-NSf"/>
                     </connections>
                 </viewController>
@@ -218,6 +237,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
