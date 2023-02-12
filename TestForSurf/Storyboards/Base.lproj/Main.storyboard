@@ -221,7 +221,6 @@
                     <size key="freeformSize" width="606" height="812"/>
                     <connections>
                         <outlet property="mainView" destination="chW-By-YUf" id="CAl-KP-rfg"/>
-                        <outlet property="selectButtonsStackView" destination="7vJ-Ma-MZa" id="QqI-nm-3jh"/>
                         <outlet property="sendApplicationButton" destination="QpS-E1-MVC" id="Uf4-0u-NSf"/>
                     </connections>
                 </viewController>

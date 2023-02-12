@@ -12,7 +12,6 @@ class MainViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet var mainView: UIView!
     @IBOutlet var sendApplicationButton: UIButton!
-    @IBOutlet var selectButtonsStackView: UIStackView!
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -26,11 +25,9 @@ class MainViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func selectButtonPressedDidTapped(_ sender: UIButton) {
-        if sender.isSelected == false {
-            setPressedState(sender: sender)
-        } else {
-            removePressedState(sender: sender)
-        }
+        sender.isSelected == false
+        ? setPressedState(sender: sender)
+        : removePressedState(sender: sender)
     }
     
     @IBAction func sendApplicationButtonDidTapped(_ sender: UIButton) {
@@ -54,21 +51,21 @@ class MainViewController: UIViewController {
     }
 }
 
-    // MARK: - UIAlertController
-    extension MainViewController {
-        private func showAlert(title: String, message: String, textField: UITextField? = nil) {
-            let alert = UIAlertController(
-                title: title,
-                message: message,
-                preferredStyle: .alert
-            )
-            let closeAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
-                textField?.text = ""
-            }
-            
-            alert.addAction(closeAction)
-            present(alert, animated: true)
+// MARK: - UIAlertController
+extension MainViewController {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        let closeAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
+            textField?.text = ""
         }
         
+        alert.addAction(closeAction)
+        present(alert, animated: true)
     }
+    
+}
 
