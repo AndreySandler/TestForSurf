@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		83D8F0592997B43A007664AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8F0582997B43A007664AA /* AppDelegate.swift */; };
 		83D8F05B2997B43A007664AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8F05A2997B43A007664AA /* SceneDelegate.swift */; };
-		83D8F05D2997B43A007664AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8F05C2997B43A007664AA /* ViewController.swift */; };
+		83D8F05D2997B43A007664AA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8F05C2997B43A007664AA /* MainViewController.swift */; };
 		83D8F0602997B43A007664AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F05E2997B43A007664AA /* Main.storyboard */; };
 		83D8F0622997B43B007664AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F0612997B43B007664AA /* Assets.xcassets */; };
 		83D8F0652997B43B007664AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83D8F0632997B43B007664AA /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		83D8F0552997B43A007664AA /* TestForSurf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForSurf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D8F0582997B43A007664AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D8F05A2997B43A007664AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83D8F05C2997B43A007664AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83D8F05C2997B43A007664AA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		83D8F05F2997B43A007664AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83D8F0612997B43B007664AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83D8F0642997B43B007664AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		83D8F06E2997B4E1007664AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				83D8F05C2997B43A007664AA /* ViewController.swift */,
+				83D8F05C2997B43A007664AA /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83D8F05D2997B43A007664AA /* ViewController.swift in Sources */,
+				83D8F05D2997B43A007664AA /* MainViewController.swift in Sources */,
 				83D8F0592997B43A007664AA /* AppDelegate.swift in Sources */,
 				83D8F05B2997B43A007664AA /* SceneDelegate.swift in Sources */,
 			);
@@ -310,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestForSurf/Config/Info.plist;
@@ -324,7 +324,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.TestForSurf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -342,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = J572FQ3494;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestForSurf/Config/Info.plist;
@@ -356,7 +356,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.4;
+				MARKETING_VERSION = 0.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AndreySandler.TestForSurf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
