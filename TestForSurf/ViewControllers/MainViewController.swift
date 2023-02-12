@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
         : removePressedState(sender: sender)
     }
     
-    @IBAction func sendApplicationButtonDidTapped(_ sender: UIButton) {
+    @IBAction func sendApplicationButtonDidTapped() {
         showAlert(
             title: "Поздравляем!",
             message: "Ваша заявка успешно отправлена!"
