@@ -10,11 +10,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var mainView: UIView!
+    @IBOutlet var sendApplicationButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainView.layer.cornerRadius = 25
+        mainView.layer.cornerRadius = 32
         mainView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 
