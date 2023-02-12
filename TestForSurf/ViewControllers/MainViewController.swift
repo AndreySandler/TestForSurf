@@ -8,7 +8,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     // MARK: - IBOutlets
     @IBOutlet var mainView: UIView!
     @IBOutlet var sendApplicationButton: UIButton!
@@ -16,12 +16,37 @@ class MainViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainView.layer.cornerRadius = 32
         mainView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
     
     override func viewWillLayoutSubviews() {
         sendApplicationButton.layer.cornerRadius = sendApplicationButton.frame.height / 2
     }
+    
+    // MARK: - IBActions
+    @IBAction func sendApplicationButtonDidTapped(_ sender: UIButton) {
+        showALert(
+            title: "Поздравляем!",
+            message: "Ваша заявка успешно отправлена!"
+        )
+    }
 }
+
+    // MARK: - UIAlertController
+    extension MainViewController {
+        private func showALert(title: String, message: String, textField: UITextField? = nil) {
+            let alert = UIAlertController(
+                title: title,
+                message: message,
+                preferredStyle: .alert
+            )
+            let closeAction = UIAlertAction(title: "Закрыть", style: .default) { _ in
+                textField?.text = ""
+            }
+            
+            alert.addAction(closeAction)
+            present(alert, animated: true)
+        }
+        
+    }
 
