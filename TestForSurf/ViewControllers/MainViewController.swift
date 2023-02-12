@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func sendApplicationButtonDidTapped(_ sender: UIButton) {
-        showALert(
+        showAlert(
             title: "Поздравляем!",
             message: "Ваша заявка успешно отправлена!"
         )
@@ -56,7 +56,7 @@ class MainViewController: UIViewController {
 
     // MARK: - UIAlertController
     extension MainViewController {
-        private func showALert(title: String, message: String, textField: UITextField? = nil) {
+        private func showAlert(title: String, message: String, textField: UITextField? = nil) {
             let alert = UIAlertController(
                 title: title,
                 message: message,
