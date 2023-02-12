@@ -27,13 +27,9 @@ class MainViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func selectButtonPressedDidTapped(_ sender: UIButton) {
         if sender.isSelected == false {
-            sender.isSelected = true
-            sender.backgroundColor = .darkGray
-            sender.tintColor = .white
+            setPressedState(sender: sender)
         } else {
-            sender.isSelected = false
-            sender.backgroundColor = .systemGroupedBackground
-            sender.tintColor = .black
+            removePressedState(sender: sender)
         }
     }
     
@@ -42,6 +38,19 @@ class MainViewController: UIViewController {
             title: "Поздравляем!",
             message: "Ваша заявка успешно отправлена!"
         )
+    }
+    
+    // MARK: - Private Methods
+    private func setPressedState(sender: UIButton) {
+        sender.isSelected = true
+        sender.backgroundColor = .darkGray
+        sender.tintColor = .white
+    }
+    
+    private func removePressedState(sender: UIButton) {
+        sender.isSelected = false
+        sender.backgroundColor = .systemGroupedBackground
+        sender.tintColor = .black
     }
 }
 
