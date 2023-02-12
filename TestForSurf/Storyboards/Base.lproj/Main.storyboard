@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -14,17 +14,33 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestForSurf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mountainWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="WeX-dV-uZF">
-                                <rect key="frame" x="-11" y="0.0" width="401" height="844"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountainWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="WeX-dV-uZF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chW-By-YUf">
+                                <rect key="frame" x="0.0" y="387" width="320" height="161"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WeX-dV-uZF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4cC-mH-l5e"/>
+                            <constraint firstItem="chW-By-YUf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6NK-hD-4pE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="chW-By-YUf" secondAttribute="trailing" id="Dkz-uC-fVN"/>
+                            <constraint firstItem="WeX-dV-uZF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F02-mN-us5"/>
+                            <constraint firstItem="WeX-dV-uZF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bre-tF-jd4"/>
+                            <constraint firstAttribute="bottom" secondItem="chW-By-YUf" secondAttribute="bottom" constant="20" id="eRg-uI-BWA"/>
+                            <constraint firstAttribute="bottom" secondItem="WeX-dV-uZF" secondAttribute="bottom" constant="20" id="fkA-bz-FU2"/>
+                            <constraint firstItem="chW-By-YUf" firstAttribute="height" secondItem="WeX-dV-uZF" secondAttribute="height" multiplier="0.294" id="z39-Id-sYh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="chW-By-YUf" id="CAl-KP-rfg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
